@@ -27,7 +27,7 @@ def add_quote(quotes, filename):
     quotes.append(new_quote)
 
     with open(filename, 'a') as file:
-        file.write(new_quote)
+        file.write(new_quote + "\n")
 
 def display_quotes(quotes, count):
     if count >= len(quotes):
